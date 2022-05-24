@@ -11,9 +11,9 @@
 **Example**
 
   - The *House* class can be **Composed** by another Object of type *Door*.
-  - So the Composition relationship states that a *House* **Has a** a *Door*.
+  - So, the Composition relationship states that a *House* **Has a** a *Door*.
 
 
   #### Difference between Composition and Inheritance
-    - **Composition** alows you to reuse the same code by implementing Objects to other Objects. Like, both an *Office* and *House* **has a** *Door*
-    - While **Inheritance** alows you to inherit the interface and implementation of other Classes.
+    - **Composition** allows you to reuse the same code by implementing Objects to other Objects. Like, both an *Office* and *House* **has a** *Door*
+    - While **Inheritance** allows you to inherit the interface and implementation of other Classes.

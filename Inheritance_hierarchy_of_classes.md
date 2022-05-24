@@ -7,18 +7,18 @@
 
 **Example**
   - Model an HR system.
-  - HR system will process the payroll for the company's employees.
-  - There are differnt types of employees in the company.
+  - The HR system will process the payroll for the company's employees.
+  - There are different types of employees in the company.
   - Our **Interface** class will be the **PayrollSystem**
   - **Base class** will be **Employee**.
-  - And there are differnt types of employees, which will be *drived* from the *Employee* class.
-  - **Drived classes** will be; **SalaryEmploee, HourlyEmployee and CommissionEmployee.**
+  - And there are different types of employees, which will be *driven* from the *Employee* class.
+  - **Driven classes** will be; **SalaryEmployee, HourlyEmployee, and CommissionEmployee.**
 
-  1. Lets start with creating the **PayrollSystem** class
+  1. Let’s start with creating the **PayrollSystem** class
 
           # Interface Class
           class PayrollSystem:
-              # calculate payroll function takes a list of employees as an argument
+              # Calculate payroll function takes a list of employees as an argument
               def calculate_payroll(self, employees):
                   print('Following are the payroll of the employee(s)')
                   print('---------------------------------------------')
@@ -68,7 +68,7 @@
 
     - That means *CommissionEmployee* will be derived from *SalaryEmploee*
 
-            # Derived class for commission based employee from the class SalaryEmployee
+            # Derived class for commission-based employee from the class SalaryEmployee
 
             class CommissionEmployee(SalaryEmployee):
                 def __init__(self, id, name, weekly_salary, commission):

@@ -5,22 +5,22 @@
   - Points at the last element inserted in the list.
   - The last element inserted is to be retrieved first.
 
-It is very convenient to implement stacks and queues with linked.
+It is very convenient to implement stacks and queues with links.
 
 
 ### Implementing Stacks using the Object `collections.deque`
 
 
-**Stacks uses LIFO approach:**
+**Stacks uses the LIFO approach:**
 
-Last element inseted in the list should be the first one to come out.
+The last element inserted in the list should be the first one to come out.
 
 ###### Example
-A history function in a web browser. That allows user to go back to the previous web page. So the last page a user visited will be loaded when the back button is pressed.
+A history function in a web browser. That allows the user to go back to the previous web page. So the last page a user visits will be loaded when the back button is pressed.
 
 - Creating a stack for the web browser history using `deque`:
 
-  - The url links of the history will be added in the stacks using `.appendleft()` because we want the last element added to the list at the top.
+  - The URL links of the history will be added in the stacks using `.appendleft()` because we want the last element added to the list at the top.
 
         from collections import deque
 

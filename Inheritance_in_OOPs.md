@@ -2,30 +2,30 @@
 
 #### 1. Theory
 
-  Inheritance is a **'Is a'** relationship. It is a process in which subclass/child class takes on the attributes and methods of the parent class. i.e. *Derived* class, from a *Base* class, **is a** specialized version of the *Base* class.
+  Inheritance is a **'Is a'** relationship. It is a process in which the subclass/child class takes on the attributes and methods of the parent class. i.e. *Derived* class, from a *Base* class, **is a** specialized version of the *Base* class.
 
-**Base/Super/Parent Class:** A class which is inherited from another class.
+**Base/Super/Parent Class:** A class that is inherited from another class.
 
-**Child/Subclass/Derived Class:** A class which inherits the attributes from the Parent class.
+**Child/Subclass/Derived Class:** A class that inherits the attributes from the Parent class.
 
 
-  Subclass can have its own defined methods and attributes, also it inherits all the mehtods and attributes from its parent class. Metthods and attributes from the parent class can also be overridden or extend in the child class.
+  A subclass can have its own defined methods and attributes, also it inherits all the methods and attributes from its parent class. Methods and attributes from the parent class can also be overridden or extended in the child class.
 
 ##### For example
 
-There is a super class called *Building* and the derived class from that base class is called *House*. So the Inheritance relationship states that a *House* **is a** *Building*. As *House* inherits the implementation and the interface of the *Building* class. Objects of the derived class, *House* should replace the Objects of base class, *Building*.
+There is a superclass called *Building* and the derived class from that base class is called *House*. So the Inheritance relationship states that a *House* **is a** *Building*. As *House* inherits the implementation and the interface of the *Building* class. Objects of the derived class, *House* should replace the Objects of a base class, *Building*.
 
 ##### Liskov Subsitution Principl:
   States that in a computer program, if D is a subtype of S, then the Objects of type S may be replaced with the Objects type D, without altering any of the desired properties of the program.
 
-Since in python everything is an Object. Let us start with how Python implements OOP in its core.
+Since in python everything is an Object. Let us start with how Python implements OOP at its core.
 
 ### 2. Core Inheritance in Python
 
-Inheritance is a required feature for any Object-Oriented Programming language and Python supports it. Every Module, Class defination, function and Object is derived from a parent class, called `object()`, and all of these are the Objects of that class in python. However, Exception(Errors) in pyhton are the exceptions. Exceptions in pyhton are created using another class, called `BaseException()`.
+Inheritance is a required feature for any Object-Oriented Programming language and Python supports it. Every Module, Class definition, function, and Object is derived from a parent class, called `object()`, and all of these are the Objects of that class in python. However, Exceptions (Errors) in python are the exceptions. Exceptions in Python are created using another class, called `BaseException()`.
 
   #### The object() Super Class in Python
-  Every Super class that you create drives from built-in Super class, called `object()`. That means it implements the interface and uses all the functionalities of the `object()` class.
+  Every Superclass that you create drives from a built-in Superclass, called `object()`. That means it implements the interface and uses all the functionalities of the `object()` class.
 
   i.e. Create a class in python:
 
@@ -33,7 +33,7 @@ Inheritance is a required feature for any Object-Oriented Programming language a
         ...     pass
         ...
 
-  Now create an object and use dir() function to display its members.
+  Now create an object and use the dir() function to display its members.
 
         >>> c = MyClass()
         >>> dir(c)
@@ -43,7 +43,7 @@ Inheritance is a required feature for any Object-Oriented Programming language a
         '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__',
         '__str__', '__subclasshook__', '__weakref__']
 
-  Now checkout the members of the object() class.
+  Now check out the members of the object() class.
 
         >>> o = object()
         >>> dir(o)
@@ -57,11 +57,11 @@ Each member of the object() class is also present in the class, `Myclass`. Altho
 
 
 #### Exception
-However, there is an exception to this. As classes that creates an Exception(Error Class) in python does not drives from the object() class.
+However, there is an exception to this. Classes that create an Exception(Error Class) in python do not drive from the object() class.
 
 There is a specific class, called `BaseException` that provides all the error types in Python.
 
-The convention is to drive your custom Error class from `**Exception**` class, that is a subclass of `BaseException` class.
+The convention is to drive your custom Error class from the `**Exception**` class, which is a subclass of the `BaseException` class.
 
   **Example**
 
@@ -96,7 +96,7 @@ The convention is to drive your custom Error class from `**Exception**` class, t
           pass
 
 
-Since the Child class, Type, inherits the the Parent class, Email, it also inherit all the attributes and methods of the parent class.
+Since the Child class, Type, inherits the Parent class, Email, it also inherits all the attributes and methods of the parent class.
 
 **Run and see the output**
 
@@ -105,12 +105,12 @@ Since the Child class, Type, inherits the the Parent class, Email, it also inher
     'Helloooo'
 
   - We created an Object of the class Type, `emlTmp`.
-  - Since the class type is derived from the Email class. It also inherits the Construtor, so while creating the Object we have to initialize it as well.
+  - Since the class type is derived from the Email class. It also inherits the Constructor, so while creating the Object we have to initialize it as well.
   - Then we called the instance attribute, `subject`, using the Type Object.
 
 ##### isinstance() function:
-- Takes two arguments, an object and a class.
-- Returns a boolean value and checks if an instance belong to the class or not.
+- Takes two arguments, an object, and a class.
+- Returns a boolean value and checks if an instance belongs to the class or not.
 - It will return a True value for the parent class as well.
 - **Example**
 
@@ -123,10 +123,10 @@ Since the Child class, Type, inherits the the Parent class, Email, it also inher
 
 You can override methods from the Parent class by adding a method with the same name in the child class.
 
-For example, HR Department has to sent an email to several departments of your office with the a specific attachment to every each department.
+For example, HR Department has to send an email to several departments of your office with a specific attachment to each department.
 
-- So for each department will be new subclass for the Email class.
-- And attachmentsDetails() method will be overridden  for each subclass.
+- So for each department will be a new subclass for the Email class.
+- And the attachmentsDetails() method will be overridden for each subclass.
 
 **Example**
 
@@ -140,16 +140,16 @@ For example, HR Department has to sent an email to several departments of your o
       >>> ITeml = ITDep("This email is for IT Department", "This email has been sent to the employees of IT Department")
 
       >>> ITeml.attachmentsDetails()
-      'THIS EMAIL IS FOR IT DEPARTMENT: This email is for IT Department, This email has been sent to the employees of IT Department. Find the following attachment, IT Department File'
+      'THIS EMAIL IS FOR IT DEPARTMENT: This email is for IT Department, This email has been sent to the employees of the IT Department. Find the following attachment, IT Department File'
 
       >>> ITeml.attachmentsDetails("New attachmenttt")
-      'THIS EMAIL IS FOR IT DEPARTMENT: This email is for IT Department, This email has been sent to the employees of IT Department. Find the following attachment, New attachmenttt'
+      'THIS EMAIL IS FOR IT DEPARTMENT: This email is for IT Department, This email has been sent to the employees of the IT Department. Find the following attachment, New attachment
 
 - Approach 2
 
   **Use super()**
 
-  - You can access parent class method from inside a method of a child class aswell.
+  - You can access the parent class method from inside a method of a child class as well.
   - This won't change the default string in the parent class only the attachment.
 
     **i.e**
@@ -166,4 +166,4 @@ Chaunsanabeel@21
 
 **Note**
 
-As long as methods or attributes are not overridden in the subclass, any change in the Parent class will automatically propogate in the child class.
+As long as methods or attributes are not overridden in the subclass, any change in the Parent class will automatically propagate in the child class.

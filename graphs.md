@@ -1,7 +1,7 @@
 
 ###### Graphs:
-- Graphs are used to show relationship between Objects.
-- There are many ways to implement graphs but the most common way is to use **Adjacency List**.
+- Graphs are used to show the relationship between Objects.
+- There are many ways to implement graphs, but the most common way is to use **Adjacency List**.
 
   Following is the representation of the Directed Acyclic Graph.
 
@@ -9,9 +9,9 @@
 
 - **Adjacency List** is a list of linked lists where each vertex of the graph is stored alongside a collection of connected vertices.
 
-- Implementing graphs using adjacency list is both time and memory efficient.
+- Implementing graphs using an adjacency list is both time and memory efficient.
 
-**i.e;**
+**i.e.;**
 
   Node  |  Linked List containing corresponding Nodes
   --|--
@@ -23,5 +23,5 @@
   6 | None
 
 - Each vertex/Node is on the left column of the table above
-- And the series of linked list are on the right column.
+- And the series of a linked list is on the right column.
 - The series of linked lists represents the connection to the corresponding Nodes.

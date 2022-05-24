@@ -6,26 +6,26 @@
 
   - Just like lists/arrays Linear data structure;
 
-    - elements are arranged in sequential manner and each element is connected to its previous and next element.
+    - elements are arranged sequentially and each element is connected to its previous and next element.
 
 
-  - Elements in linked lists are not stored in contiguous location, unlike lists.
+  - Elements in linked lists are not stored in a contiguous location, unlike lists.
 
-  - Instead elements in the linked list are linked using a pointer.
+  - Instead, elements in the linked list are linked using a pointer.
 
 
 ##### Limitations with Lists
 
-  - Size of array is fixed.
+  - Size of the array is fixed.
 
-      - Upeer limit of the element has to be specified in lists.
+      - Upper limit of the element has to be specified in lists.
 
 
   - Memory allocated is equal to the upper limit.
 
-  - Insertion and deletion is expensive in the list.
+  - Insertion and deletion are expensive in the list.
 
-    - In order to insert a new element in the list, elements in the list have to be shifted to create a room for the new element.
+    - To insert a new element in the list, elements in the list have to be shifted to create a room for the new element.
     - And to delete an element from the list everything has to be shifted back.
 
 ##### Linked list advantages
@@ -35,16 +35,16 @@
 
 ##### Linked list disadvantages
 
-  - Random access to elements is not possible in linked list. i.e. accessing an element with an index. Hence binary search is not allowed.
+  - Random access to elements is not possible in the linked list. i.e. accessing an element with an index. Hence binary search is not allowed.
 
-  - Extra pointer's memory space is needed with each element.
+  - Extra pointer memory space is needed with each element.
 
-  - No locality of reference in linked list, as per in lists elements are stored in contiguous location that is not the case in Linked list.
+  - No locality of reference in a linked list, as per in lists elements are stored in a contiguous location that is not the case in Linked list.
 
 ## 2. Structure of Linked list:
 
   - Each element of a linked list is called **Node**.
-  - Every *Node* consist of two fields;
+  - Every *Node* consists of two fields;
 
       1. **Data:** Holds the value to be stored in the Node.
       2. **Next Pointer:** A reference to the next Node.
@@ -61,7 +61,7 @@
 ## 3. Some Practical Real-world Examples Of Linked List
 
 - Used to implement **Queues, Stacks and Graphs**.
-- Lifecycele management for an Operating System.
+- Lifecycle management for an Operating System.
 - Undo buttons for a program.
 - Previous and Next of any application, e.g. Music Player, Web Browser.
 
@@ -89,13 +89,13 @@ There are two ways to insert elements and two corresponding ways to delete an el
 
   - `.insert()` insert an element in the list at a given index.
   - `.remove()` removes the element from the list at a given index.
-  - However, inserting and removing the element from the start or close to the start of the list requires shifting of other elements in the list.
+  - However, inserting and removing the element from the start or close to the start of the list requires shifting other elements in the list.
   - Which will increase the average time complexity to **O(n)**, where **n** is the length of the list.
 
 ###### Linked List
-Since Linked lists does not use contiguous location. And Nodes are linked together with a pointer, head. So deletion and insertion at any position in the linked list is very straightforward.
+Since Linked lists do not use contiguous locations. And Nodes are linked together with a pointer and head. So deletion and insertion at any position in the linked list are very straightforward.
 
-So the time complexity to perform these operation is always constant, that is **O(1)**.
+So the time complexity to perform this operation is always constant, that is **O(1)**.
 
 ##### iii. Retrieval of Elements
 - ###### Lists: For a specific element from the list.
@@ -103,17 +103,17 @@ So the time complexity to perform these operation is always constant, that is **
 
     Since lists can access the element you want using indexes. You don't need to traverse the whole list to find that element.
 
-    So the time complexity perform this operation from the list is constant to **O(1)**.
+    So the time complexity perform by this operation from the list is constant to **O(1)**.
 
 - ###### Linked Lists: For a specific element from the list.
-Where as in linked lists you need traverse the entire list to find that specific element. So the time complexity stretches to the length of the list, that is **O(n)**. Where **n** is the length of the list.
+Whereas in linked lists you need to traverse the entire list to find that specific element. So the time complexity stretches to the length of the list, that is **O(n)**. Where **n** is the length of the list.
 
 ##### Python's collection.deque
-The module **collection** in Python implements an Object called **deque**, stands for **double-ended queue**. The object contains several Methods. Some of them are listed and implemented below.
+The module **collection** in Python implements an Object called **deque**, stands for **double-ended queue**. The object contains several methods. Some of them are listed and implemented below.
 
-The Object collection.deque uses an implementation of a link list, that can be used to access, insert, or remove elements from the beginning or the end of a list.
+The Object collection.deque uses an implementation of a link list, that can be used to access, insert, or remove elements from the beginning of the end of a list.
 
-The time complexity of accessing elements using collection.deque Object is constant, **O(1)**.
+The time complexity of accessing elements using the collection.deque Object is constant, **O(1)**.
 
 ###### Implementation of the Object `deque`
 **Steps**

@@ -7,14 +7,14 @@
 
 **Example**
   - Model an HR system.
-  - HR system will process the payroll for the company's employees.
-  - There are differnt types of employees in the company.
+  - The HR system will process the payroll for the company's employees.
+  - There are different types of employees in the company.
   - Our **Interface** class will be the **PayrollSystem**
   - **Base class** will be **Employee**.
-  - And there are differnt types of employees, which will be *drived* from the *Employee* class.
-  - **Drived classes** will be; **SalaryEmploee, HourlyEmployee and CommissionEmployee.**
+  - And there are different types of employees, which will be *driven* from the *Employee* class.
+  - **Driven classes** will be; **SalaryEmploee, HourlyEmployee, and CommissionEmployee.**
 
-  1. Lets start with creating the **PayrollSystem** class
+  1. Let's start with creating the **PayrollSystem** class
 
           # Interface Class
           class PayrollSystem:
@@ -52,7 +52,7 @@
                   return self.weekly_salary
 
 
-  4. Some of the employees get paid hourly. A class of **HourlyEmployee** will be drived.
+  4. Some of the employees get paid hourly. A class of **HourlyEmployee** will be driven.
 
           # Derived class for hourly working employee from Employee
           class HourlyEmployee(Employee):
@@ -64,11 +64,11 @@
               def calculate_payroll(self):
                   return self.hours_worked * self.hour_rate
 
-  5. A class of **CommissionEmployee** for those Employees that also get commissions along with their salaries, can extend the functionalities of **SalaryEmploee** class.
+  5. A class of **CommissionEmployee** for those Employees that also get commissions along with their salaries, can extend the functionalities of the **SalaryEmploee** class.
 
     - That means *CommissionEmployee* will be derived from *SalaryEmploee*
 
-            # Derived class for commission based employee from the class SalaryEmployee
+            # Derived class for commission-based employee from the class SalaryEmployee
 
             class CommissionEmployee(SalaryEmployee):
                 def __init__(self, id, name, weekly_salary, commission):

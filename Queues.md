@@ -2,10 +2,10 @@
 - Uses **FIRST-IN/FIRST-OUT**(FIFO) approach to retrieve an element.
 - Have a **Front pointer** and **Rear pointer**.
 
-  - **Front pointer** points the start Node of the list and **Rear pointer** points at the last Node of the list.
+  - **Front pointer** points to the start node of the list and **Rear pointer** points to the last node of the list.
 
 
-- When a new element is appended in the queue it added form the Rear end.
+- When a new element is appended to the queue it is added from the Rear end.
 
 - Element is retrieved from the front of the queue.
 
@@ -17,12 +17,12 @@ To add a value in the queue
 ##### dequeue
 To remove the value from the queue
 
-**Queues uses FIFO approach:**
+**Queues use the FIFO approach:**
 
-First element inserted into the list should be the first one to com out.
+The first element inserted into the list should be the first one to come out.
 
 ###### Example
-The first arrives at the restaurant will get in the queue first and rest will follow. So the first person enters the queue will get the order first.
+The first who arrives at the restaurant will get in the queue first and the rest will follow. So the first person who enters the queue will get the order first.
 
 - Creating a queue for the restaurant's orders using `deque`:
 
@@ -39,7 +39,7 @@ The first arrives at the restaurant will get in the queue first and rest will fo
       >>> queue
       deque(['Ali','Kamran',Rubiya','Usama'])
 
-- So now in order to make this Linkedlist work as a Queue.  Remove elements the first element that was entered in the list.
+- So now to make this LinkedList work as a Queue.  Remove elements from the first element that was entered in the list.
 - We will be using the method `popleft()`
 
       # Remove the first person entered the queue, Ali
@@ -48,4 +48,4 @@ The first arrives at the restaurant will get in the queue first and rest will fo
       >>> queue.popleft()
       'Kamran'
 
-- Every call of `popleft()` method will simply remove the head  element of the queue.
+- Every call of the `popleft()` method will simply remove the head element of the queue.

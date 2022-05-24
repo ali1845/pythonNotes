@@ -1,15 +1,15 @@
 # Object Oriented Programming (OOP)
 
-### 1. Object Oriented Programming:
+### 1. Object-Oriented Programming:
 
-Object Oriented Programming is a method that bundles the related properties/attributes and behaviors of a program and organise it around individual **objects**.
+Object-Oriented Programming is a method that bundles the related properties/attributes and behaviors of a program and organizes it around individual **objects**.
 
 OOP models real-world entities as Software Objects that have some data associated with them (*attributes*) and can perform certain functions (*behaviors*).
 
 ##### Difference between classes and primitive Data structures in python:
-Primitive Data structure, like lists, integers and strings, are used to hold simple information, i.e. age of a person, name of a person or a list of hobbies of a person.
+The primitive Data structure, like lists, integers, and strings, is used to hold simple information, i.e. age of a person, the name of a person, or a list of hobbies of a person.
 
-What if we want to represent all the people in a person's family? In order to manage and maintain this more complex problem is to use *classes* rather than these primitive DS, because it will be harder to manage and maintain that.
+What if we want to represent all the people in a person's family? To manage and maintain this more complex problem is to use *classes* rather than these primitive DS because it will be harder to manage and maintain that.
 
 ### 2. Classes
 
@@ -17,7 +17,7 @@ What if we want to represent all the people in a person's family? In order to ma
 
 ##### implementation of a Class:
 
-**Class** is defined using a *class* keyword following by the name of the class. By convention name of the class is written in CapitalizedWords notation.
+**Class** is defined using a *class* keyword following the name of the class. By convention name of the class is written in CapitalizedWords notation.
 
     class Email:
         # body of the class
@@ -29,7 +29,7 @@ What if we want to represent all the people in a person's family? In order to ma
 - That is built from the class and it contains the real data as well as the overall structure of the program.
 - An Instance uses the attributes and methods of the class.
 - Instantiating an Object means creating a new object.
-- Instantiate an new object by simply type the class name with prentheses.
+- Instantiate a new object by simply typing the class name with parentheses.
 
 i.e.
 
@@ -44,23 +44,23 @@ i.e.
      # Output
      False
 
- ###### Explaination
- - Two Person objects have been Instantiated and were assigned to a differnt variable
- - p1 is not equal to p2 because each Email instance is unique and located at a totally differnt memory address.
+ ###### Explanation
+ - Two Person objects have been Instantiated and were assigned to a different variable
+ - p1 is not equal to p2 because each Email instance is unique and located at a different memory address.
 
-##### Relationship bettween an instance and a class:
+##### Relationship between an instance and a class:
 
-The relationship bettween an Object and a class is just like the relationship bettween a laptop and Lenovo. Laptop is an abstract concept. Whereas, Lenovo is actually a laptop.
+The relationship between an Object and a class is just like the relationship between a laptop and Lenovo. A laptop is an abstract concept. Whereas, Lenovo is a laptop.
 
-So the abstract class, Laptop, is implemented and form Legion, HP, Dell and etc.
+So the abstract class, Laptop, is implemented from Legion, HP, Dell, etc.
 
 
 ### 4. Attributes:
-Attributes are the properties that an Object holds. Objects are used to access the attributes of the class. In easy words attributes are just the variables that are declared inside the class, which defines the properties of the class.
+Attributes are the properties that an object holds. Objects are used to access the attributes of the class. In easy words, attributes are just the variables that are declared inside the class, which defines the properties of the class.
 
 Other than user-defined attributes, every Object in Python has some default attributes as well.
 
-- To see all the attributes and all the methods of an object in a class in Python, built-in function `dir()` is used.
+- To see all the attributes and all the methods of an object in a class in Python, the built-in function `dir()` is used.
 
       >>> eml = Email()
       >>> dir(eml)
@@ -75,12 +75,12 @@ Other than user-defined attributes, every Object in Python has some default attr
    The origin of default attributes and methods in python is discussed in detail in the **inheritance** section.
 
 #### Instance and Class attributes
-In general there are two types of Attributes. **Class** and **Instance**.
+In general, there are two types of Attributes. **Class** and **Instance**.
 
 ###### Class attributes
 Class attributes are the attributes that are created outside the methods and inside the class. They are shared by all the objects of the class.
 
-By convention the name of the class attribute is reffered by the class name.
+By convention, the name of the class attribute is referred to by the class name.
 
 
     class Email:
@@ -89,7 +89,7 @@ By convention the name of the class attribute is reffered by the class name.
 
 
 ###### Instance attributes
-Instance attrinutes are created inside any method. They are an exclusive property of an instance/object. It defines all the properties each instance should have.
+Instance attributes are created inside any method. They are the exclusive property of an instance/object. It defines all the properties each instance should have.
 
 
     class Email:
@@ -106,18 +106,18 @@ Instance attrinutes are created inside any method. They are an exclusive propert
             return f"The Subject, {self.subject} and the message, {self.message} has been sent"
 
 
-- Instance arttributes are reffered using the key word `self`.
+- Instance attributes are referred to using the keyword `self`.
 
 - The values of the instance attributes are passed as an argument of any method.
 
-- We have created two methods one is a Construtor and the other is a `sendDetails()`.
+- We have created two methods one is a Constructor and the other is a `sendDetails()`.
 
--  `subject` is the instance attribute created in the Construtor and `message` attribute is created the `sendDetails()` method.
+-  `subject` is the instance attribute created in the Constructor and the `message` attribute is created in the `sendDetails()` method.
 
 
 #### Example of Class and Instance Attributes
 
-Lets create an Object of the class Email and call the method sendDetails.
+Let's create an object of the class Email and call the method sendDetails.
 
 Since the Dunder method, `.__init__()`, is defined. We need to instantiate the class object by passing the values of the Instance attributes.
 
@@ -156,12 +156,12 @@ In REPL
     >>> eml1.message
     'There?'
 
-    # Accessing Class attribute of the class
+    # Accessing the Class attribute of the class
     >>> eml1.thanksMessage
     'Thank You! Regards'
 
 
-The custom Objects are **mutable**. As the values of instances in of a class can be changed.
+The custom Objects are **mutable**. As the values of instances in a class can be changed.
 
 
         >>> eml1.subject
@@ -172,9 +172,9 @@ The custom Objects are **mutable**. As the values of instances in of a class can
         'Hello there!'
 
  ### 4. Methods
-*Methods* are the functions that defines the functionalities and the behavior of an object.
+*Methods* are the functions that define the functionalities and the behavior of an object.
 
-In general there are three types methods;
+In general, there are three types of methods;
 
    1. Instance Methods
    3. Class Methods
@@ -183,9 +183,9 @@ In general there are three types methods;
 
 #### 4.1. Instance Methods
 
-Most common methods are the **Instance Methods**. The first parameter of each Instance Method is *self*. Which points to an instance of the class when the method is called.
+The most common methods are the **Instance method**. The first parameter of each Instance Method is *self*. Which points to an instance of the class when the method is called.
 
-Instance methods are very powerful. As they can easily access to the attributes and other methods on the same object. They can also access the class through `self.__class__`.
+Instance methods are very powerful. As they can easily access the attributes and other methods on the same object. They can also access the class through `self.__class__`.
 
  ###### Example
 
@@ -210,17 +210,17 @@ Instance methods are very powerful. As they can easily access to the attributes 
     # Create an Instance
     >>> eml = Email("Hello World!")
 
-    # Calling Instance method
-    >>> eml.sendDetails("I am learning python has been sent")
+    # Calling the Instance method
+    >>> eml.send details("I am learning python has been sent")
     'The Subject, Hello World! and the message, I am learning python has been sent'
 
 - Python replaces `self` with the instance Object, `eml`, when the method, `sendDetails()`is called.
 
 #### 4.2. Class Methods
 
-`@classmethod` decorator is used to flag a **Class method**. These method can be called directly using the name of the class. Since these methods does not use `self` parameter. Instead they use class as their parameter that points at the class, i.e. `cls`.
+`@classmethod` decorator is used to flag a **Class method**. This method can be called directly using the name of the class. Since these methods do not use the `self` parameter. Instead, they use the class as their parameter that points at the class, i.e. `cls`.
 
-Class method does not have access to the `self` parameter. So they can only modify the memebers of the class, that applies to all instances of the class. i.e. They cannot modify the instance members. As they are unaware of that.
+The class method does not have access to the `self` parameter. So they can only modify the members of the class, which applies to all instances of the class. i.e. They cannot modify the instance members. As they are unaware of that.
 
 We generally use class methods for **Factory Methods**. They return the class object, similar to the constructor, `__init__()`
 ###### Example
@@ -272,9 +272,9 @@ In REPL:
 
 
 #### 4.3. Static Methods
-`@staticmehtod` decorator is used to flag the **Static method**. The static method can be called directly using the name of the class. These are bound to the class not to the object of the class. They doesn't need any specific parameter, i.e. `self` or `cls`.
+`@staticmehtod` decorator is used to flag the **Static method**. The static method can be called directly using the name of the class. These are bound to the class, not to the object of the class. They don't need any specific parameter, i.e. `self` or `cls`.
 
-Static methods connot modify the state of the nor of any instance they primarily used for namespace your methods.
+Static methods can not modify the state of the nor of any instance, they are primarily used for namespace your methods.
 
 We generally use Static methods to create **Utility Functions**
 
@@ -311,7 +311,7 @@ Methods starts with double underscores are called **Dunder Methods**. e.g `.__in
 
 #### Method `.__init__()`:
 
-The dunder method `.__init__()`, also known as the Constructor. It is called by default whenever a new object is create. The `.__init__()` method sets the initial state of the object. The first parameter is always `self` and it can take any number of parameters.
+The dunder method `.__init__()`, also known as the Constructor. It is called by default whenever a new object is created. The `.__init__()` method sets the initial state of the object. The first parameter is always `self` and it can take any number of parameters.
 
 So whenever a new instance is created it is automatically passed to the self variable where new attributes are defined on the object.
 
@@ -326,7 +326,7 @@ So whenever a new instance is created it is automatically passed to the self var
 
 #### Method `.__str__()`:
 
-Since everything in Python is an Object and every object has `__str__()` method by default. So when we use an object as a string the `__str__()` method is called.
+Since everything in Python is an object and every object has the `__str__()` method by default. So when we use an object as a string the `__str__()` method is called.
 
 By default
 
@@ -344,7 +344,7 @@ In REPL
     >>> print(eml)
     <__main__.Email object at 0x000002923272AC40>
 
-In the above script we use our Email class object, `eml` as a string and the default `__str__()` method is called and it prints the memory location of the object where it is stored.
+In the above script we use our Email class object, `eml` as a string, and the default `__str__()` method is called and it prints the memory location of the object where it is stored.
 
 However, we can create our own `__str__()` method in our class.
 
@@ -373,7 +373,7 @@ In REPL
 ### 5. Local and global variables:
 
 #### Local variables:
-A local variable is a variable that is defined in side the scope of a code block. i.e. inside a method. Local variable can only be accessed inside the method.
+Local variables are the variables that are defined inside a method. A local variable can only be accessed inside the method.
 
     class Email:
         ...
@@ -390,7 +390,7 @@ A local variable is a variable that is defined in side the scope of a code block
             return f"{self.subject}, {self.message}"
 
 
-We have created a local variable, `samMsg` inside the `sendDetails()`. We cannot access local variable outside the block in which it is defined. Example;
+We have created a local variable, `Samsung` inside the `sendDetails()`. We cannot access a local variable outside the block in which it is defined. Example;
 
     >>> eml = Email("Yo")
     >>> eml.samMsg
@@ -398,12 +398,12 @@ We have created a local variable, `samMsg` inside the `sendDetails()`. We cannot
 
 ##### Difference between local variable and instance attribute is that.
 
-**Instance attribute** are defined using the `self` keyword. And it can be accessed between the methods of the same class.
+**Instance attributes** are defined using the `self` keyword. And it can be accessed between the methods of the same class.
 
-**Local variable** Cannot be accessed outside the code block in which it is defined. An it doesn't use any special keyword, like `self`.
+**Local variable** Cannot be accessed outside the code block in which it is defined. It doesn't use any special keyword, like `self`.
 
 #### Global variable:
-Variables that are defined outside the code block, i.e. mehtod. It can be accessed anywhere inside the class.
+Variables that are defined outside the code block, i.e. method. It can be accessed anywhere inside the class.
 
     class Email:
       globMsg = "Global message!"
@@ -426,7 +426,7 @@ We have created a global variable, `globMsg`. Which can be shared in all the met
 
 **Access modifiers** are used to modify the default scope of the members of the class and restrict their access.
 
-In python 'underscore' (`_`) is used to determine the access control of a variable. Access specifiers are helpful in securing the data from an unauthorized access, preventing data from being exploited.
+In python 'underscore' (`_`) is used to determine the access control of a variable. Access specifiers help secure the data from unauthorized access, preventing data from being exploited.
 
 There are three kinds of access modifiers;
 
@@ -467,7 +467,7 @@ Members that are accessible within the class and the class derived from it are p
 
 
 ###### 3. Private Access Modifiers
-Members that can only be accessed inside the class are private access modifiers. These are the most secure access modifiers, as they cannot be even accessed with the class object. You can only use them within the class in order to print them on the screen.
+Members that can only be accessed inside the class are private access modifiers. These are the most secure access modifiers, as they cannot be even accessed with the class object. You can only use them within the class to print them on the screen.
 
     class Email:
 
